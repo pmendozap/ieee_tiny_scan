@@ -26,7 +26,7 @@ module tt_um_pmendoza_ieee_tinyscan (
     uni_reg u0 (
     .clk(clk),
     .reset(rst_n),
-    .control(uio_in[7:4]),
+    .control(uio_in[6:4]),
     .data_i(ui_in[7:4]),
     .data_o(uo_out[3:0]),
     .SI(ui_in[0]), .SE(ui_in[1]), .SO(uio_out[0])
