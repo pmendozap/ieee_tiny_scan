@@ -33,13 +33,13 @@ module tt_um_pmendoza_ieee_tinyscan (
   );
   
   
-  uni_reg u1 (
+  uni_reg_e u1 (
     .clk(clk),
     .reset(rst_n),
     .control(uio_in[7:4]),
     .data_i(ui_in[7:4]),
     .data_o(uo_out[7:4]),
-    .SI(ui_in[2]), .SE(ui_in[3]), .SO(uio_out[1])
+    .SI(ui_in[2]), .SE(ui_in[3]), .SO(uio_out[1]), .ERR(uio_in[3:2])
   );
   
     
